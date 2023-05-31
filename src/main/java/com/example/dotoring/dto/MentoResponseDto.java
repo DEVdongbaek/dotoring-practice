@@ -1,11 +1,12 @@
 package com.example.dotoring.dto;
 
-
-import lombok.Getter;
-
+import lombok.*;
 
 @Getter
-public class MentiResponseDto {
+@Builder
+@AllArgsConstructor
+@NoArgsConstructor
+public class MentoResponseDto {
     private Long id;
     private String username;
     private String password;

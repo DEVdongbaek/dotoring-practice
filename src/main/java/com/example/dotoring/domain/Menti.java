@@ -21,17 +21,10 @@ public class Menti {
 
     private String password;
 
-    @ElementCollection(fetch = FetchType.LAZY)
-    private List<String> noteMentoes = new ArrayList<>();
-
     @Builder
     public Menti(String username, String password){
         this.username = username;
         this.password = password;
-    }
-
-    public void addNoteMentoes(Menti menti){
-        this.noteMentoes.add(menti.getUsername());
     }
 
     public void changeUsername(String username){
